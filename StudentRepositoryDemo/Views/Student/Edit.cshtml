@@ -1,0 +1,13 @@
+﻿@model StudentRepositoryDemo.Models.Student
+
+<h2>Edit Student</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+
+    Name: <input asp-for="Name" /><br />
+    Email: <input asp-for="Email" /><br />
+    Course: <input asp-for="Course" /><br />
+
+    <button type="submit">Update</button>
+</form>

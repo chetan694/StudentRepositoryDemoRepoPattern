@@ -1,0 +1,27 @@
+﻿@model IEnumerable<StudentRepositoryDemo.Models.Student>
+
+<h2>Student List</h2>
+
+<a href="/Student/Create">Add Student</a>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Course</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.Course</td>
+            <td>
+                <a href="/Student/Edit/@item.Id">Edit</a>
+                <a href="/Student/Delete/@item.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
