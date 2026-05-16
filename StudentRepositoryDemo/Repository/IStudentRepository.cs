@@ -1,5 +1,4 @@
 ﻿using StudentRepositoryDemo.Models;
-
 namespace StudentRepositoryDemo.Repository
 {
     public interface IStudentRepository
